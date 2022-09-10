@@ -62,4 +62,46 @@ for (turtles of ninja) {
 }
 // As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own.You've got this!
 
+// ===================Methods, Revisited
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+//use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
+//A. the sort() method permanently alters the array or mutates it
+favMovies.sort()
+//Use the method pop
+favMovies.pop()
+// push"Guardians of the Galaxy"
+favMovies.push("Guardians of the Galaxy")
+//Reverse the array
+favMovies.reverse()
+//Use the shiftmethod
+favMovies.shift()
+//unshift- what does it return?
+//A. returned what the shift method mutated
+favMovies.unshift()
+//splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+//A. no indexOf did not alter the the array
+favMovies.indexOf("Django Unchained") //index 14 log
+// console.log(favMovies.indexOf("Django Unchained"));
+//===============
+// slice the last half of the array(challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array ?
+//A. no it does not permanenty alter the array
+for (let i = 1; i <= favMovies.length; i++){
+  // console.log(i); //18 array
+}
+// console.log(favMovies.slice(9));
+//===========================
+// store the value of your slice in a variable, console.log it - Thought question: what is going on here ?
+//A. saving the solution so we can recall it
+const sliceVar = favMovies.slice(9)
+// console.log(sliceVar);
+
+//After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+//A. gave back 13. the movie was deleted its still there
+
+// console.log(favMovies.indexOf("Fast and Furious"));
+
+//Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
+
+//A. const is good becuase the variable is the same. Let we would have been able to change the whole array
