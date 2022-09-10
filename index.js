@@ -51,3 +51,15 @@ dart.push("Hawkins")
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
 wolfy[0] = "Gameboy"
 // console.log(wolfy);
+
+//================ Yell at the Ninja Turtles
+
+// Create an array with the members of the ninja turtles(Donatello, Leonardo, Raphael, Michaelangelo)
+const ninja = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+// Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
+for (turtles of ninja) {
+  // console.log(turtles.toUpperCase());
+}
+// As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own.You've got this!
+
+
