@@ -127,7 +127,22 @@ whereIsWaldo[1][2] = 'No One'
 
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 for (let i = 1; i < 20; i++){
-  console.log(` Love me, pet me! HSSSSSS!`);
+  // console.log(` Love me, pet me! HSSSSSS!`);
+  //For every even number in your loop, 
+  if (i % 2 === 0) {
+    // console.log(`i human...why you taking pictures of me?`);
+  }
 }
+//Make an array of the kitten's talking points
+const kittens = [
+  "...human...why you taking pictures of me?...", "...the catnip made me do it...",  "...why does the red dot always get away..."
+]
+//Use bracket notation to access each talking point kittyTalk[1];
+  // console.log(kittens[0]);
+  // console.log(kittens[1]);
+  // console.log(kittens[2]);
 
-
+//Rather than hard-coding the array position number set a variable
+let meow = 0
+kittens[meow]
+console.log(meow);
