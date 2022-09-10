@@ -105,3 +105,29 @@ const sliceVar = favMovies.slice(9)
 //Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
 //A. const is good becuase the variable is the same. Let we would have been able to change the whole array
+
+//===========================Where is Waldo
+const whereIsWaldo = [
+  ["Timmy", "Frank"],
+  "Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+  ["Petunia",
+    ["Baked Goods", "Waldo"]
+  ]
+];
+//Remove Eggbert (hint look at the slice/splice method(s))
+whereIsWaldo.splice(1, 1)
+// console.log(whereIsWaldo);
+
+//Change "Neff" to "No One"
+whereIsWaldo[1][2] = 'No One'
+// console.log(whereIsWaldo);
+
+//==========================Excited Kitten=====================
+
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+for (let i = 1; i < 20; i++){
+  console.log(` Love me, pet me! HSSSSSS!`);
+}
+
+
