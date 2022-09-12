@@ -151,9 +151,10 @@ kittens[meow]
 const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
 //Find the median number in the following nums array, then console.log that number.
 //hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
-// let sortNum = nums.sort()
+nums.sort()
+console.log(nums);
 let median = Math.floor(nums.length/2)//get the median of array
-// console.log(median);  
+console.log(nums[median]);  
 
 //Return of the Closets
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.Use this data to answer the following questions.
@@ -192,5 +193,5 @@ const thomsCloset = [
 let kristynsShoe = kristynsCloset.shift()
 //
 // thomsCloset[2] = 
-thomsCloset[2] = kristynsShoe.unshift()
-console.log(thomsCloset);
+// thomsCloset[2] = kristynsShoe.unshift()
+// console.log(thomsCloset);
